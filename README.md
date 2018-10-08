@@ -21,7 +21,7 @@ The appender will use the Redis PUBLISH command to send the log event messages t
 ```javascript
 log4js.configure({
   appenders: {
-    redis: { type: 'redis', channel: 'logs' }
+    redis: { type: '@log4js-node/redis', channel: 'logs' }
   },
   categories: { default: { appenders: ['redis'], level: 'info' } }
 });
